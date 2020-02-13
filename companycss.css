@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(203, 228, 205, 0);
 }
                     /* section 1 */
 .cover {
@@ -8,21 +10,30 @@
     color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
+    
+    
 }
 
 h1 {
     position: absolute;
     font-size: 7vw;
     align-self: center;
-    margin-left: 24%;
-
+    margin-left: 13%;
+    letter-spacing: 0.3em ;
+    z-index: 1;
+    text-shadow: -5px 2px 10px rgb(0, 0, 0);
 }
 
 .bannerpic {
     width: 25%;
-    height: 15.5vw;
+    height: 19vw;
     float: left;
-    object-fit: cover;           
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+.bannerpic:hover {
+    filter: brightness(100%);
 }
 
                     /* section 2 */
@@ -33,6 +44,7 @@ h1 {
     margin-top: 10%;
     margin-bottom: 5%;
     align-items: center;
+    
 }
 
 .leftcolumn {
@@ -54,15 +66,15 @@ h1 {
 }
 
 #ourstorytitle {
-    font-size: 3vw;
+    font-size: 4vw;
     text-transform: uppercase;
 }
 
 #ourstorytext{
     display: flex;
     flex-direction: column;
-    font-size: 1.2vw;
-    width: 60%;
+    font-size: 1.5vw;
+    width: 80%;
     text-align: justify;
     margin-top: 2%;
 
@@ -83,16 +95,16 @@ h1 {
 }
 
 #akitamap {
-    border: 0;
-    margin-left: 29%;
-    width: 30vw;
+    border: 1px solid black;
+    margin-left: 19%;
+    width: 35vw;
     height: 25vw;
     
 }
 
 address {
-    font-size: 1.2vw;
-    margin-left: 5%;
+    font-size: 1.5vw;
+    margin-left: -5%;
     align-self: center;
 }
 
@@ -128,4 +140,31 @@ address {
 .botyt {
     width: 34%;
     height: 18.6vw;
+}
+
+.endbar {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+.midend {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.rightend {
+    display: flex;
+    flex-direction: column;
+
 }
