@@ -5,13 +5,55 @@
     background-color: rgba(203, 228, 205, 0);
 }
                     /* section 1 */
+
+#reservetop {
+    position: fixed;
+    font-size: 60px;
+    z-index: 2;
+    /* background-color: black; */
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+#hiddenreserve {
+    visibility: hidden;
+}
+
+
+
+a:link{
+    text-decoration: none;
+    
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+#reservetop a {
+    color: black;
+    /* background-color: black; */
+}
+
+#reservetop a:hover {
+    background-color: rgba(203, 228, 205, 0);
+    color: white;
+    background-color: black;
+
+}
+
+#reservetop:hover #hiddenreserve {
+    visibility: visible;
+
+}
+
 .cover {
     position: relative;
     color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
-    
-    
+        
 }
 
 h1 {
@@ -73,7 +115,7 @@ h1 {
 #ourstorytext{
     display: flex;
     flex-direction: column;
-    font-size: 1.5vw;
+    font-size: 150%;
     width: 80%;
     text-align: justify;
     margin-top: 2%;
@@ -83,6 +125,7 @@ h1 {
 #groupphoto {
     width: 100%;
     margin-left: -10%;
+    border: 1px solid black;
 
 } 
 
@@ -103,9 +146,15 @@ h1 {
 }
 
 address {
-    font-size: 1.5vw;
+    font-size: 180%;
     margin-left: -5%;
     align-self: center;
+    font-style: normal;
+}
+
+
+#reserve a:hover {
+    background-color: red;
 }
 
 .botnavbar {
@@ -125,21 +174,25 @@ address {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 300%;
 }
 
 .botnavlist .botnavlink:hover {
-    background-color: rgb(41, 41, 41);
+    /* background-color: rgb(41, 41, 41); */
+    background-color: rgb(203, 228, 205);
+    color: black;
 }
 
 .section4 {
     display: flex;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
 }
 
 .botyt {
-    width: 34%;
-    height: 18.6vw;
+    width: 33.5%;
+    height: 18vw;
+    background-color: black;
+    
 }
 
 .endbar {
@@ -155,10 +208,22 @@ address {
     padding-right: 20%;
 }
 
+.endbar a:hover {
+    background-color: rgb(203, 228, 205);
+    color: black;
+    
+}
+
+.leftend {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .midend {
     display: flex;
     flex-direction: column;
+    /* text-align: justify; */
 }
 
 
@@ -166,5 +231,13 @@ address {
 .rightend {
     display: flex;
     flex-direction: column;
-
+    text-decoration-color: white;
 }
+
+.endbar a {
+    color: white;
+    line-height: 40px;
+    
+}
+
+
