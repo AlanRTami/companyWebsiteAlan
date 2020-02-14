@@ -4,8 +4,9 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgba(203, 228, 205, 0);
 }
-                    /* section 1 */
+                  
 
+                    /* NOT ACTIVE */
 #reservetop {
     position: fixed;
     font-size: 60px;
@@ -47,7 +48,9 @@ a:visited {
     visibility: visible;
 
 }
+                        /* END OF NOT ACTIVE */
 
+                      /* section 1 */
 .cover {
     position: relative;
     color: rgb(255, 255, 255);
@@ -58,10 +61,21 @@ a:visited {
 
 h1 {
     position: absolute;
-    font-size: 7vw;
+    font-size: 5vw;
     align-self: center;
-    margin-left: 13%;
+    margin-left: 38.85%;
+    margin-top: -9.41%;
     letter-spacing: 0.3em ;
+    z-index: 1;
+    text-shadow: -5px 2px 5px rgb(0, 0, 0);
+}
+
+#subheading {
+    position: absolute;
+    font-size: 6vw;
+    align-self: center;
+    margin-left: 15%;
+    letter-spacing: 0.1em ;
     z-index: 1;
     text-shadow: -5px 2px 10px rgb(0, 0, 0);
 }
@@ -78,14 +92,38 @@ h1 {
     filter: brightness(100%);
 }
 
-                    /* section 2 */
+.bannerbuttons {
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    width: 50vw;
+    margin-left: 34.48%;
+    margin-top: 10%;
+    
+}
+
+.bannerbuttons a {
+    color: white;
+    font-size: 2em;
+    padding: 2.5%;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.171);
+}
+
+/* .bbuttons {
+    padding: 5%;
+    background-color: red;
+} */
+
+                    /* SECTION 2 */
 
 .section2 {
     display: flex;
     flex-direction: row;
-    margin-top: 10%;
-    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     align-items: center;
+    background-color: rgba(245, 207, 181, 0.507);
     
 }
 
@@ -108,14 +146,14 @@ h1 {
 }
 
 #ourstorytitle {
-    font-size: 4vw;
+    font-size: 2em;
     text-transform: uppercase;
 }
 
 #ourstorytext{
     display: flex;
     flex-direction: column;
-    font-size: 150%;
+    font-size: 1.2em;
     width: 80%;
     text-align: justify;
     margin-top: 2%;
@@ -129,24 +167,34 @@ h1 {
 
 } 
 
+                    /* SECTION 3 */
 .section3 {
     display: flex;
     flex-direction: row;
     /* align-items: center; */
-    margin-bottom: 5%;
+    /* padding-top: 2.5%; */
+    /* padding-bottom: 2.5%; */
+    /* background-color: rgb(245, 207, 181); */
+    background-color: rgba(245, 207, 181, 0.507);
+    padding-bottom: 5%;
+
 
 }
 
 #akitamap {
     border: 1px solid black;
-    margin-left: 19%;
-    width: 35vw;
+    /* margin-left: 19%; */
+    /* width: 44.5vw; */
+    width: 34vw;
+    /* height: 30vw; */
     height: 25vw;
+    margin-left: 20%;
+    
     
 }
 
 address {
-    font-size: 180%;
+    font-size: 1.2em;
     margin-left: -5%;
     align-self: center;
     font-style: normal;
@@ -157,6 +205,8 @@ address {
     background-color: red;
 }
 
+
+                        /* NAV BAR */
 .botnavbar {
     list-style-type: none;
     margin: 0;
@@ -183,6 +233,7 @@ address {
     color: black;
 }
 
+                        /* SECTION 4 */
 .section4 {
     display: flex;
     /* margin-bottom: 10%; */
@@ -195,9 +246,10 @@ address {
     
 }
 
+                        /* END BAR FOOTER */
 .endbar {
     background-color: rgb(0, 0, 0);
-    text-align: center;
+    text-align: left;
     color: rgb(255, 255, 255);
     display: flex;
     /* flex-direction: row; */
